@@ -1,0 +1,15 @@
+/* * {
+    font-family:'Lucida Sans'; 
+    text-align: center;
+    position: relative;
+    top: 10px;
+} */
+.date{
+    font-size: 25px; 
+    color: rgb(255, 130, 182);  /* 분홍 */
+}
+.time{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(176, 107, 255);  /* 보라색 */
+}

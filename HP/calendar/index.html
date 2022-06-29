@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <!-- 앱로고 넣기 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/MD_applogo.png" />
+    <link rel="shortcut icon" type="image/png" href="../img/MD_applogo.png" sizes="192x192" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+		<!-- 모바일 허용 -->
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="js/main.js"></script>
+  <script src="js/data.js"></script>
+  <title>MD 캘린더</title>
+
+  <style type="text/css">
+    @font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;font-style: normal; }
+    body { background-color: white; }
+    fspan { font-family: 'EarlyFontDiary';
+      font-size: 40px;
+      color: rgb(255, 131, 152); }
+      
+      todo-title {
+        font-family: 'EarlyFontDiary';
+        font-size: 20px; }
+  </style>
+</head>
+
+<body style="font-family: 'EarlyFontDiary';">
+<header style="font-family: 'EarlyFontDiary';">
+  <h1>
+    <!-- <i class="far fa-calendar-check" ></i> -->
+    <a href="../index.php"><img src="../img/MD_Glogo.png" width="50px;"></a>
+    <strong><fspan>&nbsp; MD Calender</fspan></strong>
+  </h1>
+  <div class="calendar_title">
+    <button class="prev">&#60;</button>
+    <span class="current-year-month"></span>
+    <button class="next">&#62;</button>
+  </div>
+</header>
+
+<section class="content-left">
+  <div class="left-main">
+    <div class="main-wrap">
+      <div class="main-day"></div>
+      <div class="main-date"></div>
+    </div>
+
+    <div class="todo-wrap" >
+      <div class="todo-title" style="font-size: 25px;">write here :)</div>
+      <form class="input-form" >
+        <!-- 메모 적는 곳 -->
+        <input type="text" placeholder="최대 143자 작성이 알맞습니다." class="input-box" />
+        <button type="submit" class="input-btn clickBtn" style="font-size: 20px;">추가</button>
+      </form>
+      
+      <ul class="todoList"></ul>
+      <div class="showList">
+        <span class="listText"></span>
+        <span class="createDate"></span>
+        <button class="closed">close</button>
+      </div>
+      <div class="bgblack"></div>
+    </div>
+  </div>
+</section>
+
+<section class="content-right">
+    <div class="day-of-week">
+      <div class="dayHeader sun">SUN</div>
+      <div class="dayHeader">MON</div>
+      <div class="dayHeader">TUE</div>
+      <div class="dayHeader">WED</div>
+      <div class="dayHeader">THU</div>
+      <div class="dayHeader">FRI</div>
+      <div class="dayHeader sat">SAT</div>
+    </div>
+  <div class="calendar-body"></div>
+</section>
+
+</body>
+</html>
